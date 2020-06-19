@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9fbc53004785450408087516b8dc8173
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - master: {instanceID: 0}
+  - followTarget: {instanceID: 0}
+  - movingAnimation: {fileID: 7400012, guid: b3b4fffdc59f44847aec77c1d90e8ce3, type: 3}
+  - idleAnimation: {fileID: 7400010, guid: b3b4fffdc59f44847aec77c1d90e8ce3, type: 3}
+  - hurtAnimation: {fileID: 7400030, guid: b3b4fffdc59f44847aec77c1d90e8ce3, type: 3}
+  - attackPrefab: {fileID: 400000, guid: a610653dfbe6c714b8011a57d4c51c7f, type: 3}
+  - attackPoint: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: SkillDataC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.469342, y: 0.09645724, z: 13.944976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c845427e5bbd443bb45774e0e9cf48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skill:
+  - skillName: 
+    icon: {fileID: 0}
+    skillPrefab: {fileID: 0}
+    skillAnimation: {fileID: 0}
+    manaCost: 10
+    description: 
+  - skillName: Firebolt
+    icon: {fileID: 2800000, guid: 48eb15d2560884040b3b08239b820ced, type: 3}
+    skillPrefab: {fileID: 400004, guid: ed1eb49e2344d524491309ba72d0b173, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 10
+    description: 
+  - skillName: Triple Firebolt
+    icon: {fileID: 2800000, guid: f7ef44583dfe3a0448f6e4b9d87491c5, type: 3}
+    skillPrefab: {fileID: 400018, guid: 547cae6de15bd5a4a9d5ec315bdffcdc, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 16
+    description: 
+  - skillName: Ground Crush
+    icon: {fileID: 2800000, guid: 7986c36ae6f106d4ebbc592056966bd2, type: 3}
+    skillPrefab: {fileID: 400000, guid: 672bbed215dab424c93c7682a5728481, type: 3}
+    skillAnimation: {fileID: 7400024, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 21
+    description: 
+  - skillName: Heal
+    icon: {fileID: 2800000, guid: f7e889b0a0892a944897e004b4a9c25f, type: 3}
+    skillPrefab: {fileID: 400000, guid: 49ee484865ff03742aa767eb454423da, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 15
+    description: 
+  - skillName: Brave
+    icon: {fileID: 2800000, guid: ed2531cca51fb43449046577259e86f6, type: 3}
+    skillPrefab: {fileID: 400000, guid: 76c78c706295b2245a391fd68bde90cc, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 20
+    description: 
+  - skillName: Barrier
+    icon: {fileID: 2800000, guid: 69cd13271e02f9248b2e0d57887d90c2, type: 3}
+    skillPrefab: {fileID: 400000, guid: 7f265160146e24d46b5d093e50e5534c, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 20
+    description: 
+  - skillName: Faith
+    icon: {fileID: 2800000, guid: 2f75a30a870a8d64fbf889d741c5f1f9, type: 3}
+    skillPrefab: {fileID: 400000, guid: 9c77aba8e4b0dbc4296b420b6818ce2a, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 20
+    description: 
+  - skillName: Magic Barrier
+    icon: {fileID: 2800000, guid: db3e360396d680342bac66efe3d35c53, type: 3}
+    skillPrefab: {fileID: 400000, guid: 284bb4db6afda8443a945eaffbf5d32b, type: 3}
+    skillAnimation: {fileID: 7400006, guid: 2434b64943f63cf40958d9a43bfea4dc, type: 3}
+    manaCost: 20
+    description: 

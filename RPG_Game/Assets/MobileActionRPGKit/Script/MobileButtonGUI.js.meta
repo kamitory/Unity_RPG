@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 678fccb2239055c4e9df02bf43329856
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - attackIcon: {fileID: 2800000, guid: 3d7be24625ea1c445a9230257e6ab7f0, type: 3}
+  - skillIcon1: {fileID: 2800000, guid: 07fcc9f229e28f045a77827dc2ff52da, type: 3}
+  - skillIcon2: {fileID: 2800000, guid: 730a0b54e6b9d61409e58cd207984aea, type: 3}
+  - skillIcon3: {fileID: 2800000, guid: f7e889b0a0892a944897e004b4a9c25f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
