@@ -61,12 +61,12 @@ public class UnderwaterControllerC : MonoBehaviour {
 	    }
 	    
 	    CharacterController controller = GetComponent<CharacterController>();
-		float swimUp;
+        float swimUp = 0f;
 		// Get the input vector from kayboard or analog stick
 		if(Input.GetButton("Jump")){
-			swimUp = 2.0f;
+			swimUp += 2.0f;
 		}else{
-			swimUp = 0.0f;
+			swimUp -= 0.5f;
 		}
 		Vector3 directionVector = new Vector3(Input.GetAxis("Horizontal"), swimUp, Input.GetAxis("Vertical"));
 		
