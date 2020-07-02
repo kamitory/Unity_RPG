@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 using System.Collections;
 
 [RequireComponent (typeof (PlayerInputControllerC))]
@@ -62,14 +63,17 @@ public class UnderwaterControllerC : MonoBehaviour {
 	    
 	    CharacterController controller = GetComponent<CharacterController>();
         float swimUp = 0f;
-		// Get the input vector from kayboard or analog stick
-		if(Input.GetButton("Jump")){
-			swimUp += 2.0f;
-		}else{
-			swimUp -= 0.5f;
-		}
-		Vector3 directionVector = new Vector3(Input.GetAxis("Horizontal"), swimUp, Input.GetAxis("Vertical"));
-		
+        // Get the input vector from kayboard or analog stick
+        //if (Input.GetButton("Jump"))
+        //{
+        //    swimUp += 2.0f;
+        //}
+        //else
+        //{
+        //    swimUp = 0.0f;
+        //}
+		Vector3 directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        mainCam.transform.rotation = Quaternion.Euler(mainCam.transform.rotation.x,60, mainCam.transform.rotation.z);
 		if (directionVector != Vector3.zero) {
 			float directionLength = directionVector.magnitude;
 			directionVector = directionVector / directionLength;
@@ -82,8 +86,10 @@ public class UnderwaterControllerC : MonoBehaviour {
 		if(Input.GetAxis("Vertical") != 0 && transform.position.y < surfaceExit ||  transform.position.y >= surfaceExit && Input.GetAxis("Vertical") > 0 && mainCam.transform.eulerAngles.x >= 25 && mainCam.transform.eulerAngles.x <= 180){
        		transform.rotation = mainCam.transform.rotation;
        }
-		//motor.inputMoveDirection = transform.rotation * directionVector;
-		controller.Move(transform.rotation * directionVector * swimSpeed * Time.deltaTime);
+        //motor.inputMoveDirection = transform.rotation * directionVector;
+        if (transform.position.y < -2.0f) controller.Move(Vector3.up * swimSpeed * Time.deltaTime);
+        controller.Move(transform.rotation * directionVector * swimSpeed * Time.deltaTime);
+        if (Input.GetButton("Jump")) controller.Move(new Vector3(0,3,0) * swimSpeed * Time.deltaTime);
 		
 		    //-------------Animation----------------
 		if(!useMecanim){
