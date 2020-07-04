@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class TitleC : MonoBehaviour {
 	
@@ -19,6 +20,7 @@ public class TitleC : MonoBehaviour {
 			if (GUI.Button ( new Rect(Screen.width - 300,180 ,220 ,80), "Start Game")) {
 				PlayerPrefs.SetInt("Loadgame", 0);
 				Application.LoadLevel (goToScene);
+                SceneManager.LoadScene(goToScene);
 			}
 			if (GUI.Button ( new Rect(Screen.width - 300,300 ,220 ,80), "Load Game")) {
 				//Check for previous Save Data
@@ -26,7 +28,8 @@ public class TitleC : MonoBehaviour {
 				if(presave == 10){
 					PlayerPrefs.SetInt("Loadgame", 10);
 					Application.LoadLevel (goToScene);
-				}
+                  
+                }
 			}
 			if (GUI.Button ( new Rect(Screen.width - 300,420 ,220 ,80), "How to Play")) {
 				page = 1;

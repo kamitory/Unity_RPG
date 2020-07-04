@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_KMB/Scenes/MainMenu.unity
+    guid: c0013445da9523a4c9330b045da90d41
+  - enabled: 1
+    path: Assets/_KMB/Scenes/Field.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/_KMB/Scenes/Field2.unity
+    guid: fc8cec797ebee1d4abf8af2882fa2438
+  - enabled: 1
+    path: Assets/_KMB/Scenes/Dungeon.unity
+    guid: 73c22eb0724e2dd40abfaa0ae0936cdf
   m_configObjects: {}

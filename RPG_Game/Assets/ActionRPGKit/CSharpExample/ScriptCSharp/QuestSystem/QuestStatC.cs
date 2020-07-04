@@ -24,9 +24,11 @@ public class QuestStatC : MonoBehaviour {
 		if (Input.GetKeyDown("q")) {
 			OnOffMenu();
 		}
-		
-		
-	}
+
+       
+            questProgress[3] = transform.GetComponent<StatusC>().level;
+        
+    }
 	
 	public bool AddQuest ( int id  ){
 		bool  full = false;

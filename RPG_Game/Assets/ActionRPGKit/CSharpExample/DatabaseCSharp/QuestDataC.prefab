@@ -53,18 +53,26 @@ MonoBehaviour:
     rewardExp: 100
     rewardItemID: 
     rewardEquipmentID: 
-  - questName: Kill 5 Field Goblins
+  - questName: "\uACE0\uBE14\uB9B0 \uC18C\uD0D5"
     icon: {fileID: 0}
-    description: Field Goblin Kill
+    description: "\uACE0\uBE14\uB9B0 "
     finishProgress: 5
     rewardCash: 300
     rewardExp: 150
     rewardItemID: 0100000002000000
     rewardEquipmentID: 
-  - questName: Kill 10 Spiders
+  - questName: "\uAC70\uBBF8 \uC81C\uAC70"
     icon: {fileID: 0}
-    description: Spider Kill
+    description: "\uC2DD\uC778\uAC70\uBBF8 "
     finishProgress: 10
+    rewardCash: 500
+    rewardExp: 200
+    rewardItemID: 
+    rewardEquipmentID: 03000000
+  - questName: "\uC232\uC758 \uBE44\uBC00"
+    icon: {fileID: 0}
+    description: "5\uB808\uBCA8 \uB2EC\uC131"
+    finishProgress: 5
     rewardCash: 500
     rewardExp: 200
     rewardItemID: 

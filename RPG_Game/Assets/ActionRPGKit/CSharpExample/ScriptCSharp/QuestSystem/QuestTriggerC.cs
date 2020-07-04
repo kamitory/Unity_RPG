@@ -4,7 +4,7 @@ using System.Collections;
 public class QuestTriggerC : MonoBehaviour {
 	
 	//This Script use for multiple quests in 1 NPC
-	public GameObject[] questClients = new GameObject[2];
+	public GameObject[] questClients = new GameObject[3];
 	public int questStep = 0;
 	private bool  enter = false;
 	public Texture2D button;

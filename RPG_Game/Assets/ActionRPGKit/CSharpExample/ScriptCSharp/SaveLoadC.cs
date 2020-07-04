@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class SaveLoadC : MonoBehaviour {
 	public bool  autoLoad = false;
@@ -22,15 +23,24 @@ public class SaveLoadC : MonoBehaviour {
    		 		PlayerPrefs.SetInt("Loadgame", 0);
    			 }
 		}
-		
-	}
-	
-	void  Update (){
+      
+    
+    }
+   
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.tag == "Gate")
+        {
+            SaveData();
+            SceneMgr.Instance.loadScene(hit.gameObject.name);
+        }
+    }
+
+    void  Update (){
 		if (Input.GetKeyDown(KeyCode.Escape)) {
 			//Open Save Load Menu
 			OnOffMenu();
 		}
-		
 	}
 	
 	void  OnOffMenu (){
