@@ -33,6 +33,8 @@ public class CharacterMotorC : MonoBehaviour
         public float maxSidewaysSpeed = 6.0f;
         public float maxBackwardsSpeed = 6.0f;
 
+       
+
         // Curve for multiplying speed based on slope(negative = downwards)
         public AnimationCurve slopeSpeedMultiplier = new AnimationCurve(new Keyframe(-90, 1), new Keyframe(0, 1), new Keyframe(90, 0));
 

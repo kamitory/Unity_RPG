@@ -77,3 +77,11 @@ MonoBehaviour:
     rewardExp: 200
     rewardItemID: 
     rewardEquipmentID: 03000000
+  - questName: "\uACE0\uBE14\uB9B0 \uC9C0\uD718\uAD00 \uD1A0\uBC8C\uBC8C"
+    icon: {fileID: 0}
+    description: "\uB358\uC804\uC758 \uACE0\uBE14\uB9B0 \uC9C0\uD718\uAD00 \uCC98\uCE58"
+    finishProgress: 1
+    rewardCash: 1200
+    rewardExp: 2000
+    rewardItemID: 
+    rewardEquipmentID: 03000000

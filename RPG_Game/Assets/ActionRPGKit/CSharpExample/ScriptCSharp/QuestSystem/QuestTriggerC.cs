@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class QuestTriggerC : MonoBehaviour {
 	
 	//This Script use for multiple quests in 1 NPC
-	public GameObject[] questClients = new GameObject[3];
+	public GameObject[] questClients = new GameObject[4];
 	public int questStep = 0;
 	private bool  enter = false;
 	public Texture2D button;
@@ -26,6 +28,11 @@ public class QuestTriggerC : MonoBehaviour {
 				questClients[questStep].GetComponent<QuestClientC>().enter = true;
 			}
 		}
+
+        if( questStep >=5)
+        {
+            SceneMgr.Instance.loadScene("MainMenu");
+        }
 	}
 	
 	void  OnGUI (){

@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Enemy
   - Gate
+  - Key
   layers:
   - Default
   - TransparentFX

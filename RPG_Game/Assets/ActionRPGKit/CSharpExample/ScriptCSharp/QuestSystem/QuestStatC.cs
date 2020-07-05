@@ -26,7 +26,7 @@ public class QuestStatC : MonoBehaviour {
 		}
 
        
-            questProgress[3] = transform.GetComponent<StatusC>().level;
+            if(questProgress[3] <5)  questProgress[3] = transform.GetComponent<StatusC>().level;
         
     }
 	

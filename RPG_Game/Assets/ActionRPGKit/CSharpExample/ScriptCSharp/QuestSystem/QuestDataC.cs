@@ -17,7 +17,7 @@ public class QuestDataC : MonoBehaviour {
 		
 	}
 	
-	public Quest[] questData = new Quest[4];
+	public Quest[] questData = new Quest[5];
 	
 	public void  QuestClear ( int id  ,   GameObject player  ){
 		//Get Rewards

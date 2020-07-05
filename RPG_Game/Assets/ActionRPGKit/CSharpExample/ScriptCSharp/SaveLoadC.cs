@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class SaveLoadC : MonoBehaviour {
-	public bool  autoLoad = false;
+	public bool  autoLoad = true;
 	public GameObject player;
 	private bool  menu = false;
 	private Vector3 lastPosition;

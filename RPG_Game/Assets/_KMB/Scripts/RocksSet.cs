@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RocksSet : MonoBehaviour
 {
+    public GameObject eventCamera;
+    public GameObject minimapCamera;
     public GameObject player;
     private Vector3 rocksPosition;
     private float curTime = 0f;
@@ -22,15 +24,37 @@ public class RocksSet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if(player.GetComponent<StatusC>().level >= 5 )
+
+        if (player.GetComponent<StatusC>().level >= 5)
         {
             curTime += Time.deltaTime;
 
-            if( curTime > setTime * setNumber + 2f)
+            if (setNumber == 1)
+            {
+                eventCamera.SetActive(true);
+                minimapCamera.SetActive(false);
+
+                player.GetComponent<CharacterMotorC>().enabled = false;
+                player.GetComponent<HealthBarC>().enabled = false;
+                player.GetComponent<AttackTriggerC>().enabled = false;
+            }
+            else if(setNumber == 8 && curTime > setTime * setNumber + 3f)
+            {
+                eventCamera.SetActive(false);
+                minimapCamera.SetActive(true);
+
+                player.GetComponent<CharacterMotorC>().enabled = true;
+                player.GetComponent<HealthBarC>().enabled = true;
+                player.GetComponent<AttackTriggerC>().enabled = true;
+                gameObject.GetComponent<RocksSet>().enabled = false;
+            }
+
+            if (curTime > setTime * setNumber + 2f)
             {
                 transform.position = rocksPosition;
+                if(setNumber <8) gameObject.GetComponent<RocksSet>().enabled = false;
             }
+            
         }
     }
 }
