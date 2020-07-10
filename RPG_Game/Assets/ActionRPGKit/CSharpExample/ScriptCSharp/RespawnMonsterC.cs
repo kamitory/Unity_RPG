@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class RespawnMonsterC : MonoBehaviour {
-	
 	public GameObject enemy;
+    public string spawnName;
 	public string pointName = "SpawnPoint";
 	public float delay = 3.0f;
 	public float randomPoint = 10.0f;
@@ -21,7 +21,8 @@ public class RespawnMonsterC : MonoBehaviour {
 				ranPos.x += Random.Range(0.0f,randomPoint);
 				ranPos.z += Random.Range(0.0f,randomPoint);
 				GameObject mon = Instantiate(enemy, ranPos , spawnpoint.rotation) as GameObject;
-				mon.name = enemy.name;
+                
+				mon.name = spawnName;
 				Destroy (gameObject, 1);
 		}else{
 				Destroy (gameObject, delay +1);

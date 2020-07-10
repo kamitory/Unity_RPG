@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RocksSet : MonoBehaviour
 {
+    public GameObject effect;
     public GameObject eventCamera;
     public GameObject minimapCamera;
     public GameObject player;
@@ -17,6 +18,7 @@ public class RocksSet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         rocksPosition = transform.position;
         transform.position = new Vector3(0, 500, 500);
     }
@@ -51,6 +53,7 @@ public class RocksSet : MonoBehaviour
 
             if (curTime > setTime * setNumber + 2f)
             {
+                if (transform.position != rocksPosition) Instantiate(effect, rocksPosition, Quaternion.identity);
                 transform.position = rocksPosition;
                 if(setNumber <8) gameObject.GetComponent<RocksSet>().enabled = false;
             }

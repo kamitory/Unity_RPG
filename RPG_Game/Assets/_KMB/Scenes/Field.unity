@@ -1396,6 +1396,10 @@ PrefabInstance:
       propertyPath: autoLoad
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400026, guid: d7b699d49569d744d905b1c4ecb391a0, type: 3}
+      propertyPath: duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7b699d49569d744d905b1c4ecb391a0, type: 3}
 --- !u!1 &542988252 stripped

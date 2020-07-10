@@ -1900,6 +1900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 100110, guid: 7993b745f901fe240b5628c40f19e349, type: 3}
+  spawnName: "\uACE0\uBE14\uB9B0"
   pointName: SpawnPoint
   delay: 3
   randomPoint: 5

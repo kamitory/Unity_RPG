@@ -140,31 +140,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 166.02115
+      value: -2.32164
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.018591
+      value: -3.5423746
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 194.6259
+      value: -7.531769
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.78144425
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.68431735
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.62397504
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7291843
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_RootOrder
@@ -172,11 +172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -77.214005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -184,15 +184,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 11
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 11
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 11
+      value: 1.6500001
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: aab1a212473856840ab63b551f2ac5f3, type: 3}
       propertyPath: player
@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
@@ -633,6 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
@@ -806,6 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
@@ -1343,6 +1346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
@@ -1577,7 +1581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: d7b699d49569d744d905b1c4ecb391a0, type: 3}
       propertyPath: autoLoad
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7b699d49569d744d905b1c4ecb391a0, type: 3}
@@ -1775,6 +1779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
@@ -1940,6 +1945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
@@ -1977,6 +1983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
@@ -2164,6 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1120d9561d06b40408e85cc71642231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 115174, guid: 2a30700f4d46ee446897db45d8c9e80e, type: 3}
   eventCamera: {fileID: 182718005}
   minimapCamera: {fileID: 391622924}
   player: {fileID: 48858022}
